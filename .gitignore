@@ -10,8 +10,6 @@ node_modules/
 /coverage
 
 # production
-/frontend/build
-frontend/build
 
 package-lock.json
 yarn.lock
