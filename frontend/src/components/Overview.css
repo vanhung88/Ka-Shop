@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrap-overview{
+    width: 100%;
+    height: 100%;
+    padding: 10px 171px 90px 171px;
+}
+
+.wrap-overview h3{
+    font-family: "Poppins, sans-serif";
+    font-weight: 600;
+    font-size: 30px;
+    padding-bottom: 25px;
+}
+
+.list-overview button{
+    background: transparent !important;
+    font-size: 15px !important;
+    letter-spacing: 1px !important;
+}
+
+.active-color{
+    color: rgb(108, 122, 224) !important;
+}
+
+.overview-select{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+
+.image-style{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: -30px;
+}
+
+.image-product{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    /* max-height: 365px; */
+    min-height: 365px;
+}
+
+.image-product:hover{
+    transform: scale(1.08);
+}
+
+.name-product{
+    font-family: "Poppins, sans-serif";
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(34, 34, 34);
+    padding: 20px 0 0 0;
+}
+
+.style-btn{ 
+    position: absolute;
+    z-index: 1;
+    transform: translateY(430px);
+    display: none;
+    border-radius: 20px !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    background: #fff !important;
+    color: black !important;
+    left: 28%;
+
+}
+
+.style-btn:hover{
+    background: rgb(108, 122, 224) !important;
+    color: #fff !important;
+}
+
+.image-style:hover .style-btn{
+    transform: translateY(280px);
+    transition: 0.5s;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1590px){
+    .wrap-overview{
+        padding: 10px 30px 90px 30px;
+    }
+}
+
+/* BTN */
+@media (min-width:680px) and (max-width:960px){
+    .style-btn{
+        transform: translateY(500px)
+    }
+    .image-style:hover .style-btn{
+        transform: translateY(300px);
+        left: 30%;
+    }
+}
+
+/* /BTN */
+
+@media (max-width: 864px){
+    .overview-select{
+        flex-direction: column;
+    }
+
+    .list-overview{
+        padding-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 739px){
+    .wrap-overview{
+        padding: 10px 30px 90px 30px;
+    }
+}
+
+@media (max-width:599px){
+    .wrap-overview h3{
+        font-size: 25px;
+    }
+    
+    .list-overview button{
+        font-size: 14px !important;
+    }
+
+    .fomat{
+        margin-left: -18px !important;
+    }
+
+    .style-btn{ 
+        transform: translateY(1000px);
+        left: 35%;
+    } 
+    
+}
+
+
+@media (max-width:420px){
+    .image-style:hover .style-btn{
+        transform: translateY(240px);
+        left: 27%;
+    }
+}
