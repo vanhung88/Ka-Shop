@@ -13,6 +13,8 @@ node_modules/
 /frontend/build
 frontend/build
 
+package-lock.json
+yarn.lock
 
 # misc
 .DS_Store
